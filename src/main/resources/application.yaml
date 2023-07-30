@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  application:
+    name: product-service
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/products_database
+    username: postgres
+    password: password
+  jpa:
+    showSql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: eaeaf525c8cad6fd0aaf
+            clientSecret: 06c081114cc12f283748818fc52909df1346dd81
